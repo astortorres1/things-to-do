@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ff4d4d;
+    --background-color: #f2f2f2;
+    --font-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: var(--font-color);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px; /* Añade espacio entre el input y el botón */
+}
+
+.add-button, .filter-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 17px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-button:hover, .filter-button:hover {
+    background-color: #4caf4fb4; /* Cambia el color de fondo en hover */
+    color: var(--font-color); /* Cambia el color del texto en hover */
+}
+
+.tasks-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.delete-button, .clear-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.delete-button:hover, .clear-button:hover {
+    background-color: rgba(128, 128, 128, 0.541); /* Cambia el color de fondo en hover */
+    color: var(--secondary-color); /* Cambia el color del texto en hover */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
